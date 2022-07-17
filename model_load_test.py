@@ -74,12 +74,9 @@ lb = LabelBinarizer()
 labels = lb.fit_transform(labels)
 labels = to_categorical(labels)
 
-#(trainX, testX, trainY, testY) = train_test_split(data, labels,
-#	test_size=0.25, stratify=labels, random_state=42)
-
 #%%
 
-model = load_model(r'C:\Users\Narendra IITJ\Desktop\B.Tech\DEsign Credit Project\VGG16_2class_car_pickup\VGG16_2class.h5')
+model = load_model(r'path of the model location on your machine')
 
 start = time.time()
 predictions = model.predict(x=data, batch_size=32)
