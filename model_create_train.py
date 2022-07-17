@@ -231,9 +231,9 @@ print("process took",end-start,"seconds")
 
 print("saving the model: ")
 start = time.time()
-
-# model.save('VGG16_2Class_acc_76.h5')
-# model.save_weights('VGG16_2class_acc_76')
+#model and weights will be saved in current directory. you can save it to specific location also.
+model.save('Name_of_your_model.h5')
+model.save_weights('Name_of_weights')
 
 end = time.time()
 print("process took",end-start,"seconds")
